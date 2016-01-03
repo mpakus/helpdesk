@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Messages</h1>
+
+<ul id="messages">
+  <% @messages.each do |message| %>
+    <li>
+      <%= message.body %>
+    </li>
+  <% end %>
+</ul>
+
+<hr>
+
+<%= render 'form', message: @message %>
